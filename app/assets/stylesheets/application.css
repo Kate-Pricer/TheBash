@@ -11,3 +11,21 @@
  *= require_self
  *= require_tree .
  */
+
+
+.row
+	{background: url(<%= asset_path'/assets/images/bkg.png'%>) no-repeat fixed center top;
+}
+
+navbar-inner2 {
+	min-height: 48px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: red;
+	background-repeat: repeat-x;
+	border: 1px solid #fff;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	*zoom: 1;
+	}
+
+
