@@ -1,0 +1,27 @@
+
+
+Started GET "/home/" for 127.0.0.1 at 2013-02-18 20:51:59 -0500
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.haml within layouts/application (0.8ms)
+Compiled application.css  (0ms)  (pid 42644)
+Compiled jquery.js  (1ms)  (pid 42644)
+Compiled jquery_ujs.js  (0ms)  (pid 42644)
+Compiled application.js  (14ms)  (pid 42644)
+Completed 200 OK in 149ms (Views: 148.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-02-18 20:52:00 -0500
+Served asset /application.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-02-18 20:52:00 -0500
+Served asset /jquery.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-02-18 20:52:00 -0500
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-02-18 20:52:00 -0500
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
