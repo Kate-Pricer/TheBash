@@ -1,14 +1,29 @@
-.span12
+%section#content
 	.row
-		%h1.span4 #{link_to 'The-Bash', root_path}
-	.row.navbar
-		.navbar-inner2
-			%ul.nav
-				%li #{link_to 'Gallery', gallery_path}
-				%li #{link_to 'Our Story', our_story_path}
-				%li #{link_to 'Event', event_path}
-				%li #{link_to 'Contact Us', contact_us_path}
-				%li #{link_to 'About', about_path}
-				%li #{link_to 'Hotels', hotel_path}
-				%li #{link_to 'Gifts', gifts_path}
-.span12
+		.span12
+			.row
+				.span3.thumbnail
+					%a.media{:href => href="http://bestwesternlapeerinn.com/index.php?option=com_frontpage&Itemid=1"}
+						.media-object
+							=image_tag "http://book.bestwestern.com/props/23093/23093_b1.jpg",:style=>"overflow:hidden;width:300px;height:200px;"
+							.media-body
+								%h4.media-heading Best Western Inn​
+								%p 770 West Street<br>Lapeer, MI 48446<br>1-810-667-9444
+				.span3.thumbnail
+					%a.media{:href => href="http://www.ci.lapeer.mi.us/pr_parks.htm#13"}
+						.media-object
+							=image_tag "http://www.ci.lapeer.mi.us/images/WTTTP-sm.jpg",:style=>"overflow:hidden;width:300px;height:200px;"
+							.media-body
+								%h4.media-heading Water Tower Travel
+							%p 1552 N Main St<br>Lapeer, MI 48446<br>1-810-664-4296
+			.row
+				.span3.thumbnail
+					%a.media{:href => href="http://www.hiexpress.com/hotels/us/en/lapeer/fntla/hoteldetail"}
+						.media-object
+							=image_tag "http://www.ichotelsgroup.com/hotelmedia/repository/hotelimages/FNTLA/WELCM_EFEA_1_E.jpg",:style=>"overflow:hidden;width:300px;height:200px;"
+							.media-body
+								%h4.media-heading Holiday Inn Expres
+								%p 927 DeMille Road<br>Lapeer, MI 48446<br>1-888-HOLIDAY
+
+
+

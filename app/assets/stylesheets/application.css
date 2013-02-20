@@ -11,21 +11,110 @@
  *= require bootstrap.min
  *= require_self
  */
+body {
+	background-image: url("http://farm9.staticflickr.com/8248/8489947561_703b3d1077_b.jpg");background-repeat:no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100%;}
 
-
-.row
-	{background: url(<%= asset_path'/assets/images/bkg.png'%>) no-repeat fixed center top;
+html, body{
+	min-height:100%; min-width:100%;
 }
 
-navbar-inner2 {
-	min-height: 48px;
-	padding-left: 20px;
-	padding-right: 20px;
-	background-color: red;
-	background-repeat: repeat-x;
-	border: 1px solid #fff;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-	*zoom: 1;
+h1
+	{font-family: 'Kaushan Script', cursive;
+		font-size: 30px;
+		padding-top: 30px;
+		padding-bottom:50px;
 	}
 
 
+.bash-space {
+	padding-top: 60px
+
+
+}
+.bash-navbar {
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+
+}
+
+.bash-inner {
+	min-height: 48px;
+	padding-left: 20px;
+	padding-right: 20px;
+	opacity: 0.5;
+	background-color: #bcb9a7;
+	background-repeat: repeat-x;
+	border: 1px solid #CC9966;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	*zoom: 1;
+	font-family: 'Bilbo Swash Caps', cursive;
+	color: #474747;
+	font-size: 24px;
+	font-weight: bolder;
+	text-shadow: none;
+	padding-left: 31px;
+
+
+
+	}
+.bash-inner a {
+	color: #0A0A0A;
+	text-decoration: none;
+	line-height: 51px;
+	text-shadow: 1px 0px 1px white;}
+
+.bash-inner a:hover {
+	color: #000;
+	text-decoration: none}
+
+.bash-nav li{
+	padding: 0;
+	margin: 0 0 10px 25px;
+	color: #474747;
+float: left;}
+
+.bash-nav {
+	margin-left: 20px;
+	list-style: none;
+	display: block;
+
+
+	}
+
+.space {
+	width: 100px
+}
+.bash-header
+	{}
+
+.bash-footer li
+	{
+	list-style-type: none;
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	margin-left: 20px;
+	list-style: none;
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	display: block;}
+
+section {
+	
+	width: 1000px;
+
+}
+
+
+#content {
+	margin: 0 auto;
+}		
