@@ -1,16 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require bootstrap.min
- *= require_self
- */
+
 body {
 	background-image: url("http://farm9.staticflickr.com/8248/8489947561_703b3d1077_b.jpg");background-repeat:no-repeat;
 	background-size: cover;
@@ -39,7 +27,7 @@ h1
 	left: 0;
 	display: block;
 	float: left;
-	margin: 0 10px 0 0;
+	margin: 0px 10px 0 0;
 
 }
 
@@ -59,6 +47,7 @@ h1
 	font-weight: bolder;
 	text-shadow: none;
 	padding-left: 31px;
+	margin-left: 0px
 
 
 
@@ -77,15 +66,13 @@ h1
 	padding: 0;
 	margin: 0 0 10px 25px;
 	color: #474747;
-float: left;}
+	float: left;}
 
 .bash-nav {
 	margin-left: 20px;
 	list-style: none;
 	display: block;
-
-
-	}
+}
 
 .space {
 	width: 100px

@@ -4,11 +4,14 @@
 		%link{ :rel => "shortcut icon", :href => "/favicon.ico", :type => "image/x-icon"}/
 		%title= "The Bash :: "+controller.controller_name.capitalize
 		= stylesheet_link_tag "application", :media => "all"
+		= stylesheet_link_tag "bootstrap.min.css", :media => "all"
 		%link(href='http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Kaushan+Script' rel='stylesheet' type='text/css')
 		= javascript_include_tag "application"
+		%script{:src => 'app.js'}
+		%script{:src => 'bootstrap.min.js'}
 		%body
 		%container-fluid
 			%bash-header
 				=render :partial => 'layouts/header'
 				= yield
-			%section#content
+				%section#content
