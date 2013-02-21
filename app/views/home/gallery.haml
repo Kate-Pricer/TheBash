@@ -2,7 +2,7 @@
 .carousel.slide#myCarousel
   .carousel-inner
   .active.item
-    =image_tag("images/gallery/1.png")
+    =image_tag(asset_path "gallery/1.png")
     .carousel-caption
       %h4 Caption
   .item
@@ -128,7 +128,7 @@
   .item
     =image_tag("images/gallery/32.png")
     .carousel-caption
-      %h4 Caption  
+      %h4 Caption
   .item
     =image_tag("images/gallery/33.png")
     .carousel-caption
@@ -136,6 +136,6 @@
   .item
     =image_tag("images/gallery/34.png")
     .carousel-caption
-      %h4 Caption          
+      %h4 Caption
   %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
   %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
