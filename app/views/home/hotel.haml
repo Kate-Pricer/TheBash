@@ -1,29 +1,39 @@
 %section#content
-	.row
+	.row.bash-space 
 		.span12
 			.row
-				.span3.thumbnail
+				.span4.thumbnail
 					%a.media{:href => href="http://bestwesternlapeerinn.com/index.php?option=com_frontpage&Itemid=1"}
 						.media-object
 							=image_tag "http://book.bestwestern.com/props/23093/23093_b1.jpg",:style=>"overflow:hidden;width:300px;height:200px;"
 							.media-body
-								%h4.media-heading Best Western Inn​
-								%p 770 West Street<br>Lapeer, MI 48446<br>1-810-667-9444
-				.span3.thumbnail
+								%h5 Best Western Inn​
+								%h7 770 West Street<br>Lapeer, MI 48446<br>1-810-667-9444
+				.span4.thumbnail
 					%a.media{:href => href="http://www.ci.lapeer.mi.us/pr_parks.htm#13"}
 						.media-object
 							=image_tag "http://www.ci.lapeer.mi.us/images/WTTTP-sm.jpg",:style=>"overflow:hidden;width:300px;height:200px;"
 							.media-body
-								%h4.media-heading Water Tower Travel
-							%p 1552 N Main St<br>Lapeer, MI 48446<br>1-810-664-4296
-			.row
-				.span3.thumbnail
+								%h5 Water Tower Travel
+							%h7 1552 N Main St<br>Lapeer, MI 48446<br>1-810-664-4296
+				.span4.thumbnail
 					%a.media{:href => href="http://www.hiexpress.com/hotels/us/en/lapeer/fntla/hoteldetail"}
 						.media-object
 							=image_tag "http://www.ichotelsgroup.com/hotelmedia/repository/hotelimages/FNTLA/WELCM_EFEA_1_E.jpg",:style=>"overflow:hidden;width:300px;height:200px;"
 							.media-body
-								%h4.media-heading Holiday Inn Expres
-								%p 927 DeMille Road<br>Lapeer, MI 48446<br>1-888-HOLIDAY
+								%h5 Holiday Inn Expres
+								%h7 927 DeMille Road<br>Lapeer, MI 48446<br>1-888-HOLIDAY
 
 
-
+:javascript
+	WebFontConfig = {
+		google: { families: [ 'Bilbo+Swash+Caps::latin', 'Lovers+Quarrel::latin', 'Poiret+One::latin', 'Henny+Penny::latin', 'Bilbo::latin', 'Great+Vibes::latin', 'Kaushan+Script::latin' ] }
+	};
+	(function() {
+		var wf = document.createElement('script');
+		wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	})();

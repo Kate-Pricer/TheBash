@@ -8,6 +8,7 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require mosaic
  *= require bootstrap.min
  *= require_self
  */
@@ -16,25 +17,36 @@
 body {
 	background-image: url("http://farm9.staticflickr.com/8248/8489947561_703b3d1077_b.jpg");background-repeat:no-repeat;
 	background-size: cover;
+	position: fixed
 	width: 100%;
-	height: 100%;}
+	height: 100%;
+}
 
 html, body{
 	min-height:100%; min-width:100%;
 }
 
-h1
-	{font-family: 'Kaushan Script', cursive;
+h1 {
+	font-family: 'Kaushan Script', cursive;
 		font-size: 30px;
 		padding-top: 30px;
 		padding-bottom:50px;
-	}
+}
 
-
+h5 {font-family: 'Kaushan Script', cursive; color:#474747;}
+h5.title{font-family: 'Kaushan Script', cursive; color:#474747; font-size: 30px;}
+h7 {font-family: 'Poiret One', cursive;color:#474747;}
 .bash-space {
 	padding-top: 60px
 
 
+}
+.btn {
+	margin-top: 20px
+}
+.contact{
+	text-decoration: none;
+	list-style-type: none;
 }
 .bash-navbar {
 	position: relative;
@@ -65,22 +77,26 @@ h1
 
 
 
-	}
+}
+
 .bash-inner a {
 	color: #0A0A0A;
 	text-decoration: none;
 	line-height: 51px;
-	text-shadow: 1px 0px 1px white;}
+	text-shadow: 1px 0px 1px white;
+}
 
 .bash-inner a:hover {
 	color: #000;
-	text-decoration: none}
+	text-decoration: none
+}
 
 .bash-nav li{
 	padding: 0;
 	margin: 0 0 10px 25px;
 	color: #474747;
-	float: left;}
+	float: left;
+}
 
 .bash-nav {
 	margin-left: 20px;
@@ -91,11 +107,12 @@ h1
 .space {
 	width: 100px
 }
-.bash-header
-	{}
+.bash-header {
 
-.bash-footer li
-	{
+
+}
+
+.bash-footer li {
 	list-style-type: none;
 	position: relative;
 	left: 0;
@@ -107,7 +124,8 @@ h1
 	display: block;
 	padding-left: 20px;
 	padding-right: 20px;
-	display: block;}
+	display: block;
+}
 
 section {
 
@@ -119,3 +137,85 @@ section {
 #content {
 	margin: 0 auto;
 }
+.thumbnail {background-color: white;
+width: 250px;}
+*{ padding:0px; margin:0px; }
+			a{ color:#ffffff; }
+			
+			.boxgrid{ 
+				width: 300px; 
+				height: 200px; 
+				margin:10px; 
+				float:left; 
+				background:#161613; 
+				border: solid 2px #fff; 
+				overflow: hidden; 
+				position: relative; 
+			}
+				.boxgrid img{ 
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					border: 0; 
+				}
+				.boxgrid p{ 
+					padding: 0 10px; 
+					color:#fffff; 
+					font-weight:bold; 
+					font:10pt "Lucida Grande", Arial, sans-serif; 
+				}
+				
+			.boxcaption{ 
+				float: left; 
+				position: absolute; 
+				background: #000; 
+				height: 100px; 
+				width: 100%; 
+				opacity: .8; 
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+				/* For IE 8 */
+				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 			}
+				.captionfull .boxcaption {
+					top: 260;
+					left: 0;
+				}
+				.caption .boxcaption {
+					top: 220;
+					left: 0;
+				}
+
+.bar2 .mosaic-overlay:hover {
+	opacity:1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:alpha(opacity=100);
+}
+
+.bar3 .mosaic-overlay {
+	top:-100px;
+	height:100px;
+	background:url(../img/bg-black.png);
+		}
+
+h4 
+{
+	font-family: 'Poiret One', cursive;
+	margin: 10px 10px 0 10px;
+	font:18pt;
+	color:#FFF
+}
+.details
+	{
+	float: left; 
+	font-family: 'Henny Penny', cursive;
+	position: absolute; 
+	background: #000; 
+	height: 100px; 
+	width: 100%; 
+	opacity: .7; 
+	/* For IE 5-7 */
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+	/* For IE 8 */
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";}
+h3{ margin: 10px 10px 0 10px; ;  Arial, sans-serif; letter-spacing:-1px; }
